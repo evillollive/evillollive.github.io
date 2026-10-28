@@ -2,8 +2,8 @@
 title: "Sayana Press: giving Ugandan women a new contraceptive option"
 client: "PATH"
 youtube: "mzgv3xSY0X0"
-tags: ["Healthcare"]
-label: "Healthcare"
+tags: ["Healthcare", "Nonprofit"]
+label: "Healthcare · Nonprofit"
 role: "Producer"
 runtime: "2:38"
 duration: PT2M38S

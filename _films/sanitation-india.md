@@ -2,8 +2,8 @@
 title: "Sanitation Services for Everyone in India"
 client: "Gates Foundation"
 youtube: "kZTvbCj5U-4"
-tags: ["Healthcare"]
-label: "Healthcare"
+tags: ["Healthcare", "Nonprofit"]
+label: "Healthcare · Nonprofit"
 role: "Producer"
 runtime: "2:14"
 duration: PT2M14S
