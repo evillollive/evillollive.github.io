@@ -11,6 +11,6 @@ upload_date: 2026-10-27
 thumb: /assets/img/films/mercedes-hololens.jpg
 image: /assets/img/films/mercedes-hololens.jpg
 order: 5
-featured: 5
+featured: 2
 description: "Mercedes-Benz + HoloLens"
 ---
