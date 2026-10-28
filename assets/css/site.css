@@ -32,7 +32,7 @@ h2{font-family:var(--disp);font-size:32px;font-weight:700;letter-spacing:-.01em}
 .ghost:hover{border-color:var(--accent)}
 .small{min-height:40px;padding:0 18px;font-size:14px}
 .block{width:100%}
-.site-footer{margin-top:96px;padding-top:32px;padding-bottom:56px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;color:var(--muted)}
+.site-footer{margin-top:96px;padding-top:32px;padding-bottom:56px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:flex-start;gap:12px 28px;font-size:14px;color:var(--muted)}
 .footer-links{display:flex;flex-wrap:wrap;gap:12px 20px}
 
 /* home */
