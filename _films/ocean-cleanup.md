@@ -2,8 +2,8 @@
 title: "Coding sustainability: The Ocean Cleanup’s mission to end plastic pollution"
 client: "GitHub"
 youtube: "n5z4YcP5R18"
-tags: ["Nonprofit"]
-label: "Nonprofit"
+tags: ["Nonprofit", "Tech"]
+label: "Nonprofit · Tech"
 role: "Director, Producer"
 runtime: "9:37"
 duration: PT9M37S

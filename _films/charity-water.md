@@ -2,8 +2,8 @@
 title: "How charity: water uses GitHub to bring clean water to millions"
 client: "GitHub"
 youtube: "kHO1OvfOR7s"
-tags: ["Nonprofit"]
-label: "Nonprofit"
+tags: ["Nonprofit", "Tech"]
+label: "Nonprofit · Tech"
 role: "Director, Producer"
 runtime: "3:42"
 duration: PT3M42S
