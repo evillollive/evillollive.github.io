@@ -2,8 +2,8 @@
 title: "Archer and Della: Creating a better way to connect"
 client: "Microsoft"
 youtube: "GRCJ2PLdauw"
-tags: ["Tech"]
-label: "Tech"
+tags: ["Accessibility", "Tech"]
+label: "Accessibility · Tech"
 role: "Producer"
 runtime: "3:09"
 duration: PT3M9S

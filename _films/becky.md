@@ -2,8 +2,8 @@
 title: "Coding Accessibility: Becky"
 client: "GitHub"
 youtube: "MmHqthzJER4"
-tags: ["Tech", "Portraits"]
-label: "Tech · Portrait"
+tags: ["Accessibility", "Tech", "Portraits"]
+label: "Accessibility · Tech · Portrait"
 role: "Producer"
 runtime: "10:02"
 duration: PT10M2S

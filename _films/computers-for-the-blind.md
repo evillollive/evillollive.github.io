@@ -2,8 +2,8 @@
 title: "Acer Barrier Breakers: Computers for the Blind"
 client: "Acer"
 youtube: "v4zVVbVouR0"
-tags: ["Nonprofit", "Tech"]
-label: "Nonprofit · Tech"
+tags: ["Accessibility", "Nonprofit", "Tech"]
+label: "Accessibility · Nonprofit · Tech"
 role: "Producer"
 runtime: "0:30"
 duration: PT0M30S
