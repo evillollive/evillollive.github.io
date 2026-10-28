@@ -1,5 +1,5 @@
 ---
-title: "Barrier Breakers: Quiet Sound"
+title: "Acer Barrier Breakers: Quiet Sound"
 client: "Acer"
 youtube: "1VNw6juBDcE"
 tags: ["Nonprofit", "Tech"]

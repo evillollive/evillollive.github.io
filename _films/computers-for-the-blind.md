@@ -1,5 +1,5 @@
 ---
-title: "Barrier Breakers: Computers for the Blind"
+title: "Acer Barrier Breakers: Computers for the Blind"
 client: "Acer"
 youtube: "v4zVVbVouR0"
 tags: ["Nonprofit", "Tech"]
