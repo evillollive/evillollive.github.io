@@ -5,12 +5,11 @@ author: Alex Perrault
 email: alex@evilolive.com
 lang: en_US
 
-# Preview address for now. Change to https://evilolive.com when the domain is connected.
-url: https://evillollive.github.io
+url: https://evilolive.com
 baseurl: ""
 
-# Keep search engines out until launch. Set to false when the site goes live on evilolive.com.
-noindex: true
+# Set to true to hide the site from search engines.
+noindex: false
 
 logo: /assets/img/og-default.jpg
 social:

@@ -19,6 +19,6 @@ Alex Perrault's portfolio site. Built with Jekyll and hosted on GitHub Pages.
 
 Copy any file in `_films/`, rename it (the file name becomes the web address, e.g. `/work/my-film/`), and change the fields. Add a 1280x720 thumbnail at `assets/img/films/<same name>.jpg`.
 
-## Before launch
+## Domain
 
-In `_config.yml`, set `url: https://evilolive.com` and `noindex: false`, and add a `CNAME` file containing `evilolive.com`.
+The site is served at https://evilolive.com (the `CNAME` file). DNS is in Cloudflare: four A and four AAAA records for GitHub Pages, `www` as a CNAME to `evillollive.github.io`, all set to DNS only.
