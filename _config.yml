@@ -1,0 +1,53 @@
+title: Alex Perrault
+tagline: Films for brands about people who love what they do
+description: Alex Perrault is a producer, director and writer in Seattle who makes documentary-style films for brands about people who love what they do.
+author: Alex Perrault
+email: alex@evilolive.com
+lang: en_US
+
+# Preview address for now. Change to https://evilolive.com when the domain is connected.
+url: https://evillollive.github.io
+baseurl: ""
+
+# Keep search engines out until launch. Set to false when the site goes live on evilolive.com.
+noindex: true
+
+logo: /assets/img/og-default.jpg
+social:
+  name: Alex Perrault
+  links:
+    - https://www.linkedin.com/in/alexperrault/
+    - https://www.imdb.com/name/nm1562423/
+    - https://github.com/evillollive
+
+links:
+  linkedin: https://www.linkedin.com/in/alexperrault/
+  github: https://github.com/evillollive
+  imdb: https://www.imdb.com/name/nm1562423/
+  booking: ""   # Google Calendar booking link goes here
+
+collections:
+  films:
+    output: true
+    permalink: /work/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/og-default.jpg
+  - scope:
+      path: ""
+      type: films
+    values:
+      layout: film
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

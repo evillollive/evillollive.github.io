@@ -1,0 +1,15 @@
+# Short site copy in one place, so it's easy to edit. DRAFT: Alex to review.
+home_headline: I make films for brands about people who love what they do.
+home_sub: I specialize in getting real people to tell their best stories on camera.
+home_hero_film: openclaw   # the film at the top of the home page
+
+work_intro: Documentary-style films for tech companies, healthcare providers and nonprofits.
+
+about_opening: I'm Alex Perrault, a producer, director and writer. I make documentary-style films for brands.
+about_paragraphs:
+  - Most recently I was Senior Creative Producer at GitHub Films, where I made films about the developers and maintainers behind open source, from Linus Torvalds to a Log4j maintainer. Before that I led video at Designit, making films for Microsoft, Amazon and others.
+  - I started in broadcast and documentary, and that's still how I work. I do my homework and I'm easy to talk to, which helps people relax and tell their own stories on camera. I'm based in Seattle and work in LA and New York.
+
+contact_intro: Tell me a little about the project. A rough outline is enough to start.
+
+closing_line: Have a story in mind?

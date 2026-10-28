@@ -1,0 +1,68 @@
+---
+layout: default
+title: Start a project
+description: Tell Alex Perrault about your film. Based in Seattle, working in LA and New York.
+permalink: /contact/
+---
+<section class="wrap contact">
+  <div class="contact-main">
+    <h1 class="disp">Start a project</h1>
+    <p class="lede">{{ site.data.copy.contact_intro }}</p>
+
+    <form id="brief" class="brief" data-email="{{ site.email }}" novalidate>
+      <div class="row">
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="f-co">Company <span>(optional)</span></label><input id="f-co" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="f-type">What are you making?</label>
+          <select id="f-type" name="type">
+            <option>Brand documentary</option>
+            <option>Customer or community story</option>
+            <option>Video portrait</option>
+            <option>Docuseries</option>
+            <option>Event or launch film</option>
+            <option>Not sure yet</option>
+          </select></div>
+        <div class="field"><label for="f-budget">Budget <span>(optional)</span></label>
+          <select id="f-budget" name="budget">
+            <option value="">Choose a range</option>
+            <option>Under $10K</option>
+            <option>$10K to $25K</option>
+            <option>$25K to $50K</option>
+            <option>$50K+</option>
+            <option>Not sure yet</option>
+          </select></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="f-loc">Location <span>(optional)</span></label><input id="f-loc" name="location" type="text"></div>
+        <div class="field"><label for="f-time">Timing <span>(optional)</span></label><input id="f-time" name="timing" type="text"></div>
+      </div>
+      <div class="field"><label for="f-about">About the project</label><textarea id="f-about" name="about" rows="6"></textarea></div>
+      <div class="send">
+        <button type="submit" class="cta">Prepare email</button>
+        <span class="hint">Opens an email you can review and send. Nothing is stored on this site.</span>
+      </div>
+      <p class="form-note" role="status" hidden></p>
+    </form>
+  </div>
+
+  <aside class="contact-side">
+    {% if site.links.booking != "" %}
+    <div class="side">
+      <h2>Prefer to talk?</h2>
+      <p>Pick a time for a 20-minute call.</p>
+      <a class="ghost" href="{{ site.links.booking }}">Book a call</a>
+    </div>
+    {% endif %}
+    <div class="side">
+      <h2>Email</h2>
+      <a class="big" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+    <div class="side">
+      <h2>Where I work</h2>
+      <p>Based in Seattle. Working in LA and NYC.</p>
+      <a href="{{ site.links.linkedin }}">LinkedIn ↗</a>
+    </div>
+  </aside>
+</section>

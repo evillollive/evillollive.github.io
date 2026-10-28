@@ -1,0 +1,65 @@
+---
+layout: default
+---
+{% assign film = page %}
+<article>
+<section class="wrap film-head">
+  <a class="tags" href="/work/{{ film.tags[0] | slugify }}/">{{ film.label }}</a>
+  <h1 class="disp">{{ film.title }}</h1>
+</section>
+
+<section class="wrap film-player">
+  {% include player.html film=film eager=true %}
+  {% if film.client_video %}
+  <a class="watch" href="https://www.youtube.com/watch?v={{ film.client_video }}">{{ film.client_label }} ↗</a>
+  {% else %}
+  <a class="watch" href="https://www.youtube.com/watch?v={{ film.youtube }}">Watch on YouTube ↗</a>
+  {% endif %}
+</section>
+
+<section class="wrap film-body">
+  <div class="film-about">
+    {% assign body = content | strip %}
+    {% if body != "" %}
+    <h2>About the film</h2>
+    <div class="prose">{{ content }}</div>
+    {% endif %}
+  </div>
+  <aside class="glance" aria-label="At a glance">
+    <h2 class="glance-h">At a glance</h2>
+    <dl>
+      <dt>Client</dt><dd>{{ film.client }}</dd>
+      <dt>My role</dt><dd>{{ film.role }}</dd>
+      <dt>Runtime</dt><dd>{{ film.runtime }}</dd>
+      {% if film.shown_in %}<dt>Shown in</dt><dd>{{ film.shown_in }}</dd>{% endif %}
+    </dl>
+    <a class="cta block" href="/contact/">Make something like this</a>
+  </aside>
+</section>
+
+{% assign first = film.tags[0] %}
+{% assign related = site.films | where_exp: "f", "f.tags contains first" | where_exp: "f", "f.url != film.url" | sort: "order" %}
+<section class="wrap section">
+  <div class="section-head">
+    <h2>More films</h2>
+    <a href="/work/{{ first | slugify }}/">All {{ first | downcase }} films</a>
+  </div>
+  <div class="grid">
+    {% for f in related limit: 3 %}{% include film-card.html film=f %}{% endfor %}
+  </div>
+</section>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": {{ film.title | jsonify }},
+  "description": {{ film.description | jsonify }},
+  "thumbnailUrl": {{ film.thumb | absolute_url | jsonify }},
+  "uploadDate": "{{ film.upload_date | date: '%Y-%m-%d' }}",
+  "duration": "{{ film.duration }}",
+  "embedUrl": "https://www.youtube.com/embed/{{ film.youtube }}",
+  "creator": { "@type": "Person", "name": "Alex Perrault", "url": {{ "/about/" | absolute_url | jsonify }} }
+}
+</script>

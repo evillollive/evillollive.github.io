@@ -1,0 +1,4 @@
+<section class="wrap clients" aria-label="Selected clients">
+  <span class="eyebrow">Selected clients</span>
+  {% for c in site.data.clients %}<img class="clogo" src="/assets/img/logos/{{ c.file }}" alt="{{ c.name }}" style="--h: {{ c.height }}px">{% endfor %}
+</section>

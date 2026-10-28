@@ -1,0 +1,30 @@
+# Logos in the "Selected clients" row (Home and About).
+# To add a client: put its logo file in /assets/img/logos/ and add a line here.
+# height is the display height in pixels, tuned by eye so the logos look about the same size.
+- name: GitHub
+  file: github.svg
+  height: 30
+- name: Microsoft
+  file: microsoft.svg
+  height: 28
+- name: Amazon
+  file: amazon.svg
+  height: 32
+- name: Intel
+  file: intel.svg
+  height: 30
+- name: Gates Foundation
+  file: gates-foundation.svg
+  height: 38
+- name: UNHCR, the UN Refugee Agency
+  file: unhcr.svg
+  height: 44
+- name: PATH
+  file: path.svg
+  height: 34
+- name: Gentiva
+  file: gentiva.svg
+  height: 32
+- name: Acer
+  file: acer.svg
+  height: 24

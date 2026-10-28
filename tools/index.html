@@ -1,0 +1,28 @@
+---
+layout: default
+title: Tools
+description: Free, open source production tools built by Alex Perrault, plus a couple of side projects.
+permalink: /tools/
+---
+<section class="wrap page-head">
+  <h1 class="disp">Tools</h1>
+  <p class="lede">Free, open source tools I built for my own productions, plus a couple of side projects.</p>
+</section>
+
+{% for g in site.data.tools %}
+<section class="wrap section tools-group">
+  <h2>{{ g.group }}</h2>
+  <div class="tool-grid">
+    {% for t in g.items %}
+    <article class="tool">
+      <h3>{{ t.name }}</h3>
+      <p>{{ t.line }}</p>
+      <div class="tool-links">
+        {% if t.try %}<a class="cta small" href="{{ t.try }}">Try it</a>{% endif %}
+        <a class="ghost small" href="{{ t.source }}">Source on GitHub ↗</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}

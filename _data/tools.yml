@@ -1,0 +1,21 @@
+- group: Production tools
+  items:
+    - name: create-call-sheet
+      line: Builds a production call sheet as a styled spreadsheet. Use it as an AI skill, or as a browser app with no AI at all.
+      try: https://evillollive.github.io/create-call-sheet/
+      source: https://github.com/evillollive/create-call-sheet
+    - name: Analyze Video
+      line: Turns a video link into a timestamped Word report with screenshots and captions.
+      source: https://github.com/evillollive/Analyze-Video-Skill
+    - name: casting-director
+      line: Finds and ranks people worth putting on camera, with the hook for each one and how to reach them.
+      source: https://github.com/evillollive/casting-director
+- group: Side projects
+  items:
+    - name: Dungeon Mapper
+      line: A local-first battle map editor for tabletop role-playing games.
+      try: https://evillollive.github.io/Dungeon-Mapper/
+      source: https://github.com/evillollive/Dungeon-Mapper
+    - name: Alarmed by Math
+      line: An iPhone alarm you can only turn off by solving math problems.
+      source: https://github.com/evillollive/alarmed-by-math

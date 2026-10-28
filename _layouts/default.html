@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if site.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+{% seo %}
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+{{ page.head_extra }}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap site-header">
+  <a class="brand" href="/">ALEX PERRAULT</a>
+  <nav class="nav" aria-label="Main">
+    <a href="/work/"{% if page.url contains '/work/' %} aria-current="page"{% endif %}>Work</a>
+    <a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+    <a href="/tools/"{% if page.url == '/tools/' %} aria-current="page"{% endif %}>Tools</a>
+    <a class="pill" href="/contact/"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Start a project</a>
+  </nav>
+</header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="wrap site-footer">
+  <span>Alex Perrault · Seattle, LA, NYC</span>
+  <span class="footer-links">
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <a href="{{ site.links.linkedin }}">LinkedIn</a>
+    <a href="{{ site.links.github }}">GitHub</a>
+    <a href="{{ site.links.imdb }}">IMDb</a>
+  </span>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

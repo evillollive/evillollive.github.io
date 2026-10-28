@@ -1,0 +1,54 @@
+---
+layout: default
+title: About
+description: Alex Perrault is a Daytime Emmy-nominated producer, director and writer with more than 25 years in broadcast, documentary and brand films.
+permalink: /about/
+---
+{% assign copy = site.data.copy %}
+<section class="wrap about-top">
+  <img class="portrait" src="/assets/img/photos/bts-india.jpg" alt="Alex Perrault on set in India for GitHub's open source healthcare film" width="1800" height="1200">
+  <div class="about-text">
+    <h1 class="disp">About</h1>
+    <p class="about-open">{{ copy.about_opening }}</p>
+    {% for p in copy.about_paragraphs %}<p>{{ p }}</p>{% endfor %}
+    <p><a class="cta" href="/contact/">Start a project</a></p>
+  </div>
+</section>
+
+<section class="wrap facts-cols">
+  <div>
+    <h2 class="eyebrow">Background</h2>
+    <ul class="facts">
+      <li>Senior Creative Producer, GitHub Films <span>2022 to 2026</span></li>
+      <li>Group Creative Director, Video, Designit North America <span>2016 to 2022</span></li>
+      <li>Independent producer, director, writer and editor <span>Since 1999</span></li>
+      <li>Daytime Emmy nomination, Single Camera Editing <span>Sell This House</span></li>
+      <li>Hoarders, Critics' Choice Television Award winner, Best Reality Series</li>
+      <li>Broadcast and streaming credits <span>Netflix, Amazon Prime, PBS, Discovery, History, A&amp;E, Travel Channel, Spike, Biography, NatGeo</span></li>
+      <li>BFA Film and BFA Illustration <span>Savannah College of Art and Design</span></li>
+    </ul>
+  </div>
+  <div>
+    <h2 class="eyebrow">Feature documentaries</h2>
+    <ul class="facts">
+      <li>A Life in Waves <span>SXSW Official Selection; Directors' Choice Best Feature, Boston Underground</span></li>
+      <li>GLOW <span>Best Documentary at Gasparilla, Sidewalk (Audience Choice) and San Diego Comic-Con Independent</span></li>
+      <li>County Fair, Texas <span>Special Jury Award, Documentary Feature, Sidewalk</span></li>
+      <li>Festival selections <span>Hot Docs, SXSW, Istanbul, Leeds Palestine, Roma CinemaDoc, Capital Filmmakers Madrid, Royal Film Commission Jordan, Sidewalk</span></li>
+      <li><a href="{{ site.links.imdb }}">Full credits on IMDb ↗</a></li>
+    </ul>
+    <h2 class="eyebrow mt">Memberships</h2>
+    <ul class="facts">
+      <li>NATAS <span>Emmy voting member</span></li>
+      <li>International Documentary Association</li>
+      <li>Seattle Film Institute <span>Professional Advisory Committee</span></li>
+    </ul>
+  </div>
+</section>
+
+{% include clients.html %}
+
+<section class="wrap photos">
+  <img class="photo-main" src="/assets/img/photos/bts-munich.jpg" alt="On an interview set in Munich" width="1800" height="1200" loading="lazy">
+  <img class="photo-side" src="/assets/img/photos/bts-san-francisco.jpg" alt="Filming on the floor of an event in San Francisco" width="1800" height="1200" loading="lazy">
+</section>

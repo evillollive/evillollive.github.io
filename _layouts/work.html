@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% if page.tab == "Featured" %}
+  {% assign films = site.films | where_exp: "f", "f.featured" | sort: "featured" %}
+{% elsif page.tab == "All" %}
+  {% assign films = site.films | sort: "order" %}
+{% else %}
+  {% assign films = site.films | where_exp: "f", "f.tags contains page.tab" | sort: "order" %}
+{% endif %}
+<section class="wrap page-head">
+  <h1 class="disp">Work</h1>
+  <p class="lede">{{ site.data.copy.work_intro }}</p>
+  <nav class="tabs" aria-label="Show films by category">
+    {% for t in site.data.tabs %}
+      {% if t.name == "Featured" %}
+        {% assign n = site.films | where_exp: "f", "f.featured" | size %}
+      {% elsif t.name == "All" %}
+        {% assign n = site.films | size %}
+      {% else %}
+        {% assign n = site.films | where_exp: "f", "f.tags contains t.name" | size %}
+      {% endif %}
+      <a class="tab" href="{{ t.url }}"{% if t.name == page.tab %} aria-current="page"{% endif %}>{{ t.name }} <span>{{ n }}</span></a>
+    {% endfor %}
+  </nav>
+</section>
+
+<section class="wrap work-grid">
+  <div class="grid">
+    {% for f in films %}{% include film-card.html film=f %}{% endfor %}
+  </div>
+</section>
+
+<p class="wrap ask">Looking for something specific? <a href="/contact/">Ask me for examples in your industry.</a></p>

@@ -1,0 +1,15 @@
+# Tabs on the Work page. Each tab is its own page at /work/<slug>/.
+- name: Featured
+  url: /work/
+- name: Tech
+  url: /work/tech/
+- name: Healthcare
+  url: /work/healthcare/
+- name: Nonprofit
+  url: /work/nonprofit/
+- name: Portraits
+  url: /work/portraits/
+- name: Case studies
+  url: /work/case-studies/
+- name: All
+  url: /work/all/

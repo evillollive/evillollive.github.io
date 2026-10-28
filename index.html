@@ -1,0 +1,42 @@
+---
+layout: default
+title: Alex Perrault
+description: Alex Perrault is a producer, director and writer in Seattle who makes documentary-style films for brands about people who love what they do.
+---
+{% assign copy = site.data.copy %}
+{% assign hero = site.films | where_exp: "f", "f.url contains copy.home_hero_film" | first %}
+<section class="wrap hero">
+  <h1 class="disp">{{ copy.home_headline }}</h1>
+  <p class="lede">{{ copy.home_sub }}</p>
+</section>
+
+<section class="wrap hero-film">
+  <a class="hero-link" href="{{ hero.url }}">
+    <img src="{{ hero.thumb }}" alt="" width="1280" height="720">
+    <span class="hero-caption">
+      <span class="play-dot" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+      <span><span class="hero-kicker">Watch</span> <span class="hero-title">{{ hero.title }} · </span>{{ hero.runtime }}</span>
+    </span>
+  </a>
+</section>
+
+{% include clients.html %}
+
+<section class="wrap section">
+  <div class="section-head">
+    <h2>Selected films</h2>
+    <a href="/work/">All work</a>
+  </div>
+  <div class="grid">
+    {% assign featured = site.films | where_exp: "f", "f.featured" | sort: "featured" %}
+    {% for f in featured %}{% include film-card.html film=f %}{% endfor %}
+  </div>
+</section>
+
+<section class="wrap closing">
+  <h2 class="disp">{{ copy.closing_line }}</h2>
+  <div class="closing-actions">
+    <a class="cta" href="/contact/">Start a project</a>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </div>
+</section>

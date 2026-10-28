@@ -1,0 +1,6 @@
+<a class="card{% if include.small %} sm{% endif %}" href="{{ include.film.url }}">
+  <img src="{{ include.film.thumb }}" alt="" loading="lazy" width="1280" height="720">
+  <span class="tags">{{ include.film.label }}</span>
+  <span class="ttl">{{ include.film.title }}</span>
+  <span class="meta">{{ include.film.role }} · {{ include.film.runtime }}</span>
+</a>
