@@ -2,8 +2,8 @@
 title: "How NVDA & OSARA are empowering blind people globally"
 client: "GitHub"
 youtube: "L076ngGbBRc"
-tags: ["Accessibility", "Tech", "Portraits"]
-label: "Accessibility · Tech · Portrait"
+tags: ["Accessibility", "Tech"]
+label: "Accessibility · Tech"
 role: "Director, Co-Producer, Writer"
 runtime: "10:49"
 duration: PT10M49S

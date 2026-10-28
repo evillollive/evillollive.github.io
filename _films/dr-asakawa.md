@@ -2,8 +2,8 @@
 title: "Coding Accessibility: Dr. Asakawa"
 client: "GitHub"
 youtube: "leajvBZciAg"
-tags: ["Accessibility", "Tech", "Portraits"]
-label: "Accessibility · Tech · Portrait"
+tags: ["Accessibility", "Tech"]
+label: "Accessibility · Tech"
 role: "Producer"
 runtime: "9:33"
 duration: PT9M33S

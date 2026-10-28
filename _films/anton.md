@@ -2,8 +2,8 @@
 title: "Anton’s journey: AI-powered coding for everyone"
 client: "Microsoft"
 youtube: "suuE8XM65bs"
-tags: ["Accessibility", "Tech", "Portraits"]
-label: "Accessibility · Tech · Portrait"
+tags: ["Accessibility", "Tech"]
+label: "Accessibility · Tech"
 role: "Director, Producer"
 runtime: "1:41"
 duration: PT1M41S

@@ -2,8 +2,8 @@
 title: "Coding Accessibility: Paul"
 client: "GitHub"
 youtube: "xudr6NhDXfs"
-tags: ["Accessibility", "Tech", "Portraits"]
-label: "Accessibility · Tech · Portrait"
+tags: ["Accessibility", "Tech"]
+label: "Accessibility · Tech"
 role: "Producer"
 runtime: "8:45"
 duration: PT8M45S
