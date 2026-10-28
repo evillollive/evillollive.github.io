@@ -11,6 +11,7 @@ body{margin:0;background:var(--ground);color:var(--text);font-family:var(--body)
 img{max-width:100%;height:auto;display:block}
 a{color:var(--accent)}a:hover{color:var(--accent-hi)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;background:var(--accent);color:var(--ground);padding:8px 14px;z-index:10}
 .wrap{max-width:1240px;margin:0 auto;padding:0 40px}
 .disp{font-family:var(--disp);font-weight:700;letter-spacing:-.02em;line-height:1.04}
