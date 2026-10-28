@@ -66,6 +66,7 @@ h2{font-family:var(--disp);font-size:32px;font-weight:700;letter-spacing:-.01em}
 /* work */
 .page-head{padding-top:64px;display:flex;flex-direction:column;gap:22px}
 .page-head h1{font-size:clamp(44px,6vw,64px)}
+.page-head .page-statement{font-family:var(--disp);font-size:clamp(30px,3.6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.01em;max-width:900px}
 .tabs{display:flex;flex-wrap:wrap;gap:10px;padding-top:6px}
 .tab{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 20px;border:1.5px solid var(--line2);border-radius:999px;color:var(--text);text-decoration:none;font-size:15px;font-weight:500}
 .tab:hover{border-color:var(--accent);color:var(--text)}

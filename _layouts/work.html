@@ -9,8 +9,7 @@ layout: default
   {% assign films = site.films | where_exp: "f", "f.tags contains page.tab" | sort: "order" %}
 {% endif %}
 <section class="wrap page-head">
-  <h1 class="disp">Work</h1>
-  <p class="lede">{{ site.data.copy.work_intro }}</p>
+  <h1 class="page-statement">{{ site.data.copy.work_intro }}</h1>
   <nav class="tabs" aria-label="Show films by category">
     {% for t in site.data.tabs %}
       {% if t.name == "Featured" %}
