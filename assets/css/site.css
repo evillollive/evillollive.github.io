@@ -105,7 +105,7 @@ h2{font-family:var(--disp);font-size:32px;font-weight:700;letter-spacing:-.01em}
 .about-text{display:flex;flex-direction:column;gap:20px}
 .about-text h1{font-size:clamp(44px,6vw,64px)}
 .about-text p{margin:0;font-size:18px;line-height:1.7;color:#d6d5ce}
-.about-text .about-open{font-family:var(--disp);font-size:26px;line-height:1.4;font-weight:500;color:var(--text)}
+.about-text .about-open{font-family:var(--disp);font-size:clamp(30px,3.6vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.01em;color:var(--text)}
 .facts-cols{padding-top:88px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:56px}
 .facts{margin:14px 0 0;padding:0;list-style:none}
 .facts li{border-top:1px solid var(--line);padding:15px 0;font-size:17px;line-height:1.45;display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 24px}
