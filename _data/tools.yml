@@ -1,13 +1,13 @@
 - group: Production tools
   items:
-    - name: create-call-sheet
+    - name: Create Call Sheet
       line: Builds a production call sheet as a styled spreadsheet. Use it as an AI skill, or as a browser app with no AI at all.
       try: https://evillollive.github.io/create-call-sheet/
       source: https://github.com/evillollive/create-call-sheet
     - name: Analyze Video
       line: Turns a video link into a timestamped Word report with screenshots and captions.
       source: https://github.com/evillollive/Analyze-Video-Skill
-    - name: casting-director
+    - name: Casting Director
       line: Finds and ranks people worth putting on camera, with the hook for each one and how to reach them.
       source: https://github.com/evillollive/casting-director
 - group: Side projects

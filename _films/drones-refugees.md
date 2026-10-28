@@ -13,6 +13,6 @@ image: /assets/img/films/drones-refugees.jpg
 bts_photo: /assets/img/photos/bts-on-location.jpg
 bts_alt: "Alex Perrault with the crew in Kakuma, Kenya"
 order: 31
-description: "In Kakuma, one of Africa’s largest refugee camps, UNHCR and the local community use drones, AI and open source tools to make the first detailed maps of their home."
+description: "In Kakuma, one of Africa’s largest refugee camps, UNHCR and the local community use drones, AI, and open source tools to make the first detailed maps of their home."
 ---
-In Kakuma, one of Africa’s largest refugee camps, UNHCR and the local community use drones, AI and open source tools to make the first detailed maps of their home.
+In Kakuma, one of Africa’s largest refugee camps, UNHCR and the local community use drones, AI, and open source tools to make the first detailed maps of their home.
