@@ -2,8 +2,8 @@
 title: "How drones and open source are building maps for refugees"
 client: "GitHub"
 youtube: "EHccwVnNK4c"
-tags: ["Nonprofit"]
-label: "Nonprofit"
+tags: ["Nonprofit", "Tech"]
+label: "Nonprofit · Tech"
 role: "Director, Producer"
 runtime: "3:21"
 duration: PT3M21S
