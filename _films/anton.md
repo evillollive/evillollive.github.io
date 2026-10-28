@@ -10,6 +10,8 @@ duration: PT1M41S
 upload_date: 2023-12-05
 thumb: /assets/img/films/anton.jpg
 image: /assets/img/films/anton.jpg
+ad_video: "XAUvaRdCIa4"
+ad_label: "Watch the audio-described version (longer cut)"
 order: 4
 featured: 4
 shown_in: "Satya Nadella’s Microsoft Ignite 2023 keynote"

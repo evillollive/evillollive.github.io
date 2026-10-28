@@ -15,7 +15,7 @@ layout: default
   {% else %}
   <a class="watch" href="https://www.youtube.com/watch?v={{ film.youtube }}">Watch on YouTube <span aria-hidden="true">↗</span></a>
   {% endif %}
-  {% if film.ad_video %}<a class="watch" href="https://www.youtube.com/watch?v={{ film.ad_video }}">Watch the audio-described version <span aria-hidden="true">↗</span></a>{% endif %}
+  {% if film.ad_video %}<a class="watch" href="https://www.youtube.com/watch?v={{ film.ad_video }}">{{ film.ad_label | default: "Watch the audio-described version" }} <span aria-hidden="true">↗</span></a>{% endif %}
 </section>
 
 <section class="wrap film-body">

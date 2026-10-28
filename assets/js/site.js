@@ -6,7 +6,7 @@ document.querySelectorAll('.player[data-youtube]').forEach(function (box) {
   btn.addEventListener('click', function () {
     var id = box.getAttribute('data-youtube');
     var f = document.createElement('iframe');
-    f.src = 'https://www.youtube.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0&playsinline=1';
+    f.src = 'https://www.youtube.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0&playsinline=1&cc_load_policy=1&cc_lang_pref=en';
     f.title = (box.getAttribute('data-title') || 'Video') + ' (video)';
     f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     f.allowFullscreen = true;
