@@ -24,6 +24,12 @@ layout: default
     <h2>About the film</h2>
     <div class="prose">{{ content }}</div>
     {% endif %}
+    {% if film.bts_photo %}
+    <figure class="bts">
+      <img src="{{ film.bts_photo }}" alt="{{ film.bts_alt }}" width="1400" height="1050" loading="lazy">
+      <figcaption>On set</figcaption>
+    </figure>
+    {% endif %}
   </div>
   <aside class="glance" aria-label="At a glance">
     <h2 class="glance-h">At a glance</h2>
