@@ -11,10 +11,11 @@ layout: default
 <section class="wrap film-player">
   {% include player.html film=film eager=true %}
   {% if film.client_video %}
-  <a class="watch" href="https://www.youtube.com/watch?v={{ film.client_video }}">{{ film.client_label }} ↗</a>
+  <a class="watch" href="https://www.youtube.com/watch?v={{ film.client_video }}">{{ film.client_label }} <span aria-hidden="true">↗</span></a>
   {% else %}
-  <a class="watch" href="https://www.youtube.com/watch?v={{ film.youtube }}">Watch on YouTube ↗</a>
+  <a class="watch" href="https://www.youtube.com/watch?v={{ film.youtube }}">Watch on YouTube <span aria-hidden="true">↗</span></a>
   {% endif %}
+  {% if film.ad_video %}<a class="watch" href="https://www.youtube.com/watch?v={{ film.ad_video }}">Watch the audio-described version <span aria-hidden="true">↗</span></a>{% endif %}
 </section>
 
 <section class="wrap film-body">
@@ -31,8 +32,8 @@ layout: default
     </figure>
     {% endif %}
   </div>
-  <aside class="glance" aria-label="At a glance">
-    <h2 class="glance-h">At a glance</h2>
+  <section class="glance" aria-labelledby="glance-h">
+    <h2 class="glance-h" id="glance-h">At a glance</h2>
     <dl>
       <dt>Client</dt><dd>{{ film.client }}</dd>
       <dt>My role</dt><dd>{{ film.role }}</dd>
@@ -40,7 +41,7 @@ layout: default
       {% if film.shown_in %}<dt>Shown in</dt><dd>{{ film.shown_in }}</dd>{% endif %}
     </dl>
     <a class="cta block" href="/contact/">Make something like this</a>
-  </aside>
+  </section>
 </section>
 
 {% assign first = film.tags[0] %}

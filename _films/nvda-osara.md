@@ -10,6 +10,7 @@ duration: PT10M49S
 upload_date: 2024-05-16
 thumb: /assets/img/films/nvda-osara.jpg
 image: /assets/img/films/nvda-osara.jpg
+ad_video: "N-y3yomLLSk"
 order: 17.2
 description: "Mick Curran and Jamie Teh created NVDA, an open source screen reader. Blind and low-vision developers, musicians, and audio engineers show how they use it, along with OSARA, Jamie’s project for making music in REAPER."
 ---

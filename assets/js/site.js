@@ -7,11 +7,12 @@ document.querySelectorAll('.player[data-youtube]').forEach(function (box) {
     var id = box.getAttribute('data-youtube');
     var f = document.createElement('iframe');
     f.src = 'https://www.youtube.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0&playsinline=1';
-    f.title = btn.getAttribute('aria-label') || 'Video';
+    f.title = (box.getAttribute('data-title') || 'Video') + ' (video)';
     f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     f.allowFullscreen = true;
     box.appendChild(f);
     btn.remove();
+    f.focus();
   });
 });
 
@@ -22,12 +23,18 @@ if (form) {
     e.preventDefault();
     var v = function (n) { var el = form.elements[n]; return el ? el.value.trim() : ''; };
     var note = form.querySelector('.form-note');
+    var nameField = form.elements.name;
     if (!v('name')) {
       note.hidden = false;
+      note.id = 'form-note';
       note.textContent = 'Please add your name so I know who to reply to.';
-      form.elements.name.focus();
+      nameField.setAttribute('aria-invalid', 'true');
+      nameField.setAttribute('aria-describedby', 'form-note');
+      nameField.focus();
       return;
     }
+    nameField.removeAttribute('aria-invalid');
+    nameField.removeAttribute('aria-describedby');
     var lines = [
       'Name: ' + v('name'),
       v('company') && 'Company: ' + v('company'),

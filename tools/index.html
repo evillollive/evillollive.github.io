@@ -18,7 +18,7 @@ permalink: /tools/
       <p>{{ t.line }}</p>
       <div class="tool-links">
         {% if t.try %}<a class="cta small" href="{{ t.try }}">Try it</a>{% endif %}
-        <a class="ghost small" href="{{ t.source }}">Source on GitHub ↗</a>
+        <a class="ghost small" href="{{ t.source }}">Source on GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </article>
     {% endfor %}

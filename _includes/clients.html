@@ -1,4 +1,6 @@
-<section class="wrap clients" aria-label="Selected clients">
-  <span class="eyebrow">Selected clients</span>
-  {% for c in site.data.clients %}<img class="clogo" src="/assets/img/logos/{{ c.file }}" alt="{{ c.name }}" style="--h: {{ c.height }}px">{% endfor %}
+<section class="wrap clients-section" aria-labelledby="clients-h">
+  <h2 id="clients-h">{{ site.data.copy.logos_heading }}</h2>
+  <ul class="clients">
+    {% for c in site.data.clients %}<li><img class="clogo" src="/assets/img/logos/{{ c.file }}" alt="{{ c.name }}" style="--h: {{ c.height }}px"></li>{% endfor %}
+  </ul>
 </section>

@@ -47,7 +47,7 @@ permalink: /contact/
     </form>
   </div>
 
-  <aside class="contact-side">
+  <div class="contact-side">
     {% if site.links.booking != "" %}
     <div class="side">
       <h2>Prefer to talk?</h2>
@@ -62,7 +62,7 @@ permalink: /contact/
     <div class="side">
       <h2>Where I work</h2>
       <p>Based in Seattle. Available as a local in LA, New York, and London.</p>
-      <a href="{{ site.links.linkedin }}">LinkedIn ↗</a>
+      <a href="{{ site.links.linkedin }}">LinkedIn <span aria-hidden="true">↗</span></a>
     </div>
-  </aside>
+  </div>
 </section>
