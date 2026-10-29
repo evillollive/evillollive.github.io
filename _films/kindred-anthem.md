@@ -11,5 +11,5 @@ upload_date: 2026-10-27
 thumb: /assets/img/films/kindred-anthem.jpg
 image: /assets/img/films/kindred-anthem.jpg
 order: 26
-description: "Kindred at Home: Anthem"
+description: "Anthem film for Kindred at Home. Directed, co-produced and written by Alex Perrault."
 ---

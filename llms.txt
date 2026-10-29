@@ -1,0 +1,47 @@
+---
+layout: null
+permalink: /llms.txt
+---
+{% assign pr = site.data.profile %}# Alex Perrault
+
+> {{ pr.summary }}
+
+- Website: {{ site.url }}/
+- Email: {{ site.email }}
+- Based in: {{ pr.city }}, Washington, USA. Works as a local in {{ pr.works_in | join: ", " }}.
+- To start a project: {{ site.url }}/contact/
+- LinkedIn: {{ site.links.linkedin }}
+- IMDb: {{ site.links.imdb }}
+
+## Main pages
+
+- [Home]({{ site.url }}/): {{ site.data.copy.home_headline }} {{ site.data.copy.home_sub }}
+- [Work]({{ site.url }}/work/): All {{ site.films | size }} films, grouped by {% for t in site.data.tabs %}{% unless t.name == "Featured" or t.name == "All" %}{{ t.name }}{% unless forloop.rindex0 == 1 %}, {% endunless %}{% endunless %}{% endfor %}.
+- [Services]({{ site.url }}/services/): {{ site.data.services.statement }} {{ site.data.services.intro }}
+- [About]({{ site.url }}/about/): Bio, honors, credits and memberships.
+- [Reach out]({{ site.url }}/contact/): Project brief form and email.
+- [Bonus]({{ site.url }}/bonus/): Free, open source production tools Alex built, plus side projects.
+
+## Services
+
+{% for st in site.data.services.stages %}- {{ st.name }}: {{ st.items | join: ", " }}
+{% endfor %}
+## Background
+
+- Specialties: {{ pr.specialties | join: "; " }}
+- Past roles: {{ pr.past_roles | join: "; " }}
+- Clients include: {% for c in site.data.clients %}{{ c.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+- Broadcast and streaming credits: {{ pr.broadcast }}
+- Festival selections: {{ pr.festivals }}
+{% for a in pr.awards %}- Honor: {{ a }}
+{% endfor %}{% for m in pr.memberships %}- Member: {{ m.name }}{% if m.note %} ({{ m.note }}){% endif %}
+{% endfor %}- Education: {{ pr.education }}
+
+## Films
+
+{% assign all = site.films | sort: "order" %}{% for f in all %}- [{{ f.title }}]({{ f.url | absolute_url }}): {{ f.description }} Client: {{ f.client }}. Alex's role: {{ f.role }}. Runtime: {{ f.runtime }}. Categories: {{ f.tags | join: ", " }}.{% if f.shown_in %} Shown in: {{ f.shown_in }}.{% endif %}{% if f.ad_video %} Audio-described version: https://www.youtube.com/watch?v={{ f.ad_video }}{% endif %}
+{% endfor %}
+## Free tools
+
+{% for g in site.data.tools %}{% for t in g.items %}- [{{ t.name }}]({{ t.try | default: t.source }}): {{ t.line }}
+{% endfor %}{% endfor %}

@@ -14,5 +14,5 @@ order: 6
 featured: 6
 client_video: "37sezoRo7lQ"
 client_label: "Watch it on Gentiva’s channel"
-description: "We are Gentiva"
+description: "Hospice film for Gentiva. Co-directed and co-produced by Alex Perrault."
 ---

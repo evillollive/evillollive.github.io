@@ -12,5 +12,5 @@ thumb: /assets/img/films/mercedes-hololens.jpg
 image: /assets/img/films/mercedes-hololens.jpg
 order: 5
 featured: 2
-description: "Mercedes-Benz + HoloLens"
+description: "Microsoft customer case study about Mercedes-Benz and HoloLens. Directed, produced, written and edited by Alex Perrault."
 ---

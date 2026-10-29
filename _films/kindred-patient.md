@@ -11,5 +11,5 @@ upload_date: 2026-10-27
 thumb: /assets/img/films/kindred-patient.jpg
 image: /assets/img/films/kindred-patient.jpg
 order: 28
-description: "Kindred at Home: Patient"
+description: "Kindred at Home spot about a patient. Directed, co-produced and written by Alex Perrault."
 ---

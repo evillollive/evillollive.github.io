@@ -31,3 +31,21 @@ layout: default
 </section>
 
 <p class="wrap ask">Looking for something specific? <a href="/contact/">Ask me for examples in your industry.</a></p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "author": { "@id": "{{ site.url }}/#alex" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ films | size }},
+    "itemListElement": [{% for f in films %}
+      { "@type": "ListItem", "position": {{ forloop.index }}, "url": {{ f.url | absolute_url | jsonify }}, "name": {{ f.title | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]
+  }
+}
+</script>

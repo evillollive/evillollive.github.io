@@ -1,0 +1,20 @@
+{% assign pr = site.data.profile %}<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}/#alex",
+  "name": "Alex Perrault",
+  "url": "{{ site.url }}/",
+  "image": "{{ site.url }}/assets/img/photos/portrait-cern.jpg",
+  "email": "mailto:{{ site.email }}",
+  "jobTitle": {{ pr.job_title | jsonify }},
+  "description": {{ pr.summary | jsonify }},
+  "address": { "@type": "PostalAddress", "addressLocality": {{ pr.city | jsonify }}, "addressRegion": {{ pr.region | jsonify }}, "addressCountry": {{ pr.country | jsonify }} },
+  "workLocation": [{% for c in pr.works_in %}{ "@type": "Place", "name": {{ c | jsonify }} }{% unless forloop.last %}, {% endunless %}{% endfor %}],
+  "knowsAbout": {{ pr.specialties | jsonify }},
+  "award": {{ pr.awards | jsonify }},
+  "memberOf": [{% for m in pr.memberships %}{ "@type": "Organization", "name": {{ m.name | jsonify }}{% if m.note %}, "description": {{ m.note | jsonify }}{% endif %} }{% unless forloop.last %}, {% endunless %}{% endfor %}],
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Savannah College of Art and Design" },
+  "sameAs": [{{ site.links.linkedin | jsonify }}, {{ site.links.imdb | jsonify }}, {{ site.links.github | jsonify }}]
+}
+</script>

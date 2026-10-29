@@ -11,5 +11,5 @@ upload_date: 2026-10-27
 thumb: /assets/img/films/kindred-clinicians.jpg
 image: /assets/img/films/kindred-clinicians.jpg
 order: 27
-description: "Kindred at Home: Clinicians"
+description: "Kindred at Home spot about its clinicians. Directed, co-produced and written by Alex Perrault."
 ---

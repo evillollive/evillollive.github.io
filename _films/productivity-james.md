@@ -11,5 +11,5 @@ upload_date: 2026-10-27
 thumb: /assets/img/films/productivity-james.jpg
 image: /assets/img/films/productivity-james.jpg
 order: 24
-description: "Productivity hack: James, Shen Zen Tea"
+description: "Microsoft Office productivity hack featuring James of Shen Zen Tea. Directed, produced and edited by Alex Perrault."
 ---

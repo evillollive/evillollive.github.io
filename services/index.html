@@ -31,3 +31,23 @@ permalink: /services/
     <a href="mailto:{{ site.email }}">{{ site.email }}</a>
   </div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Documentary-style film production for brands",
+  "serviceType": "Video production",
+  "description": {{ page.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "provider": { "@id": "{{ site.url }}/#alex" },
+  "areaServed": [{% for c in site.data.profile.works_in %}{ "@type": "City", "name": {{ c | jsonify }} }{% unless forloop.last %}, {% endunless %}{% endfor %}],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services by production stage",
+    "itemListElement": [{% for st in s.stages %}
+      { "@type": "OfferCatalog", "name": {{ st.name | jsonify }}, "itemListElement": [{% for i in st.items %}{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": {{ i | jsonify }} } }{% unless forloop.last %}, {% endunless %}{% endfor %}] }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]
+  }
+}
+</script>

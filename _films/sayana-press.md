@@ -11,5 +11,5 @@ upload_date: 2015-05-12
 thumb: /assets/img/films/sayana-press.jpg
 image: /assets/img/films/sayana-press.jpg
 order: 29
-description: "Sayana Press: giving Ugandan women a new contraceptive option"
+description: "PATH film about Sayana Press, an injectable contraceptive that is easier for women in Uganda to get and use. Co-produced by Alex Perrault."
 ---

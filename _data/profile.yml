@@ -1,0 +1,42 @@
+# Facts about Alex used in the hidden data for search engines and AI tools
+# (the structured data on every page, and /llms.txt). Visitors don't see this file's text directly.
+job_title: Producer, director and writer
+summary: >-
+  Alex Perrault is a producer, director and writer based in Seattle. He makes doc style
+  films for brands about people who love what they do, and specializes in getting real
+  people to tell their best stories on camera. Most recently he was Senior Creative
+  Producer at GitHub Films, working with the developers and maintainers behind open source
+  software. Before that he led video at Designit, making films for Microsoft, Amazon, Acer
+  and others. He started in broadcast and documentary and is a Daytime Emmy nominee.
+  He is available to work as a local in Seattle, Los Angeles, New York and London.
+city: Seattle
+region: WA
+country: US
+works_in: [Seattle, Los Angeles, New York, London]
+specialties:
+  - Documentary-style brand films
+  - Customer stories and case study videos
+  - Video portraits
+  - Interviewing real people on camera
+  - Films about technology and open source software
+  - Healthcare films
+  - Nonprofit and global health films
+  - Accessible video, including captions and audio description
+past_roles:
+  - Senior Creative Producer, GitHub Films
+  - Group Creative Director, Video, Designit North America
+awards:
+  - "Daytime Emmy nomination, Single Camera Editing (Sell This House)"
+  - "Critics’ Choice Television Award winner, Best Reality Series (Hoarders)"
+  - "A Life in Waves: SXSW Official Selection; Directors’ Choice Best Feature, Boston Underground"
+  - "GLOW: Best Documentary at Gasparilla, Sidewalk (Audience Choice) and San Diego Comic-Con Independent"
+  - "County Fair, Texas: Special Jury Award, Documentary Feature, Sidewalk"
+memberships:
+  - name: National Academy of Television Arts and Sciences (NATAS)
+    note: Emmy voting member
+  - name: International Documentary Association
+  - name: Seattle Film Institute
+    note: Professional Advisory Committee
+education: Savannah College of Art and Design (BFA Film, BFA Illustration)
+broadcast: Netflix, Amazon Prime, PBS, Discovery, History, A&E, Travel Channel, Spike, Biography, NatGeo
+festivals: Hot Docs, SXSW, Istanbul, Leeds Palestine, Roma CinemaDoc, Capital Filmmakers Madrid, Royal Film Commission Jordan, Sidewalk
