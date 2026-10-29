@@ -1,0 +1,47 @@
+# Services page. Each stage has a heading and a list.
+# To change wording, edit here. Order on the page follows this file.
+statement: "I can take your film from idea to delivery."
+intro: "I’ll find the right people for every part of your project and manage them for you."
+stages:
+  - name: Development
+    items:
+      - Creative briefs
+      - Concepts and treatments
+      - Scripts
+      - Story research and pre-interviews
+      - Storyboards
+  - name: Pre-production
+    items:
+      - Budgets and schedules
+      - Casting and talent scouting
+      - Location scouting
+      - Permits
+      - Releases and approvals
+      - Crew hiring
+      - Travel and international shoots
+  - name: Production
+    items:
+      - Directing
+      - Interviewing
+      - Camera and lighting
+      - Sound
+      - Drone
+      - Multicam
+      - Social-first capture on set
+  - name: Post-production
+    items:
+      - Editing
+      - Color correction
+      - Sound editing and mix
+      - Original music
+      - Music licensing
+      - Voiceover
+      - Motion graphics
+  - name: Delivery
+    items:
+      - Social and conference cutdowns
+      - Captions
+      - Audio description
+      - Translated versions
+      - Performance reporting
+    note: 'Several of my films have audio-described versions. <a href="/work/accessibility/">See the accessibility films</a>.'

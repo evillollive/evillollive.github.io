@@ -1,0 +1,33 @@
+---
+layout: default
+title: Services
+description: Alex Perrault produces, directs, writes and edits doc style films for brands, and can run every stage of a production, from creative briefs and casting to color, music, captions, audio description and translated versions.
+permalink: /services/
+---
+{% assign s = site.data.services %}
+<section class="wrap page-head">
+  <h1 class="page-statement">{{ s.statement }}</h1>
+  <p class="svc-intro">{{ s.intro }}</p>
+</section>
+
+<section class="wrap svc-list" aria-label="Services by stage">
+  {% for st in s.stages %}
+  <div class="svc">
+    <div class="svc-head">
+      <h2>{{ st.name }}</h2>
+    </div>
+    <div class="svc-body">
+      <ul>{% for i in st.items %}<li>{{ i }}</li>{% endfor %}</ul>
+      {% if st.note %}<p class="svc-note">{{ st.note }}</p>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="wrap closing">
+  <h2 class="disp">{{ site.data.copy.closing_line }}</h2>
+  <div class="closing-actions">
+    <a class="cta" href="/contact/">Reach out</a>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </div>
+</section>

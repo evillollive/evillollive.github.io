@@ -176,3 +176,16 @@ h2{font-family:var(--disp);font-size:32px;font-weight:700;letter-spacing:-.01em}
 }
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+/* Services */
+.svc-intro{max-width:760px;margin:20px 0 0;font-size:19px;line-height:1.6;color:var(--soft)}
+.svc-list{padding-top:64px}
+.svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:16px 56px;border-top:1px solid var(--line);padding:36px 0}
+.svc-head h2{font-family:var(--disp);font-size:28px;margin:0}
+.svc-head p{margin:8px 0 0;color:var(--soft)}
+.svc-body ul{margin:0;padding:0;list-style:none;columns:2;column-gap:40px}
+.svc-body li{break-inside:avoid;padding:6px 0 6px 18px;position:relative}
+.svc-body li::before{content:"";position:absolute;left:0;top:16px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.svc-note{margin:16px 0 0;color:var(--muted);font-size:15px}
+@media (max-width:900px){.svc{grid-template-columns:1fr}}
+@media (max-width:480px){.svc-body ul{columns:1}}
