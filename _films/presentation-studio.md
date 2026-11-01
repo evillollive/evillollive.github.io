@@ -11,5 +11,6 @@ upload_date: 2026-10-27
 thumb: /assets/img/films/presentation-studio.jpg
 image: /assets/img/films/presentation-studio.jpg
 order: 13
+case_order: 8
 description: "Microsoft customer case study about Presentation Studio. Directed, produced and written by Alex Perrault."
 ---

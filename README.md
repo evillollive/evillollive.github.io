@@ -9,6 +9,7 @@ Alex Perrault's portfolio site. Built with Jekyll and hosted on GitHub Pages.
 | Headline, intros, About bio | `_data/copy.yml` |
 | A film (title, role, runtime, tags, description) | `_films/<film>.md` |
 | Which films are Featured, and their order | the `featured:` number in each film file |
+| Order of the Case studies tab | the `case_order:` number in each case study film file (every case study needs one) |
 | Film at the top of the home page | `home_hero_film` in `_data/copy.yml` |
 | Client logos | `_data/clients.yml` plus the logo file in `assets/img/logos/` |
 | Tools | `_data/tools.yml` |

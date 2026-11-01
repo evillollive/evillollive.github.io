@@ -11,6 +11,7 @@ upload_date: 2023-10-23
 thumb: /assets/img/films/duolingo.jpg
 image: /assets/img/films/duolingo.jpg
 order: 15
+case_order: 4
 description: "Duolingo’s engineers on how GitHub Copilot reduces friction for a team of 400+ and frees up time for new ideas."
 ---
 Duolingo’s engineers on how GitHub Copilot reduces friction for a team of 400+ and frees up time for new ideas.

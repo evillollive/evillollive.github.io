@@ -11,6 +11,7 @@ upload_date: 2025-07-03
 thumb: /assets/img/films/wildfires.jpg
 image: /assets/img/films/wildfires.jpg
 order: 14.5
+case_order: 3
 description: "The San Bernardino County Fire Protection District uses Esri’s mapping tools and open source code on GitHub to pull real-time data together, so firefighters can stay ahead of a blaze."
 ---
 The San Bernardino County Fire Protection District uses Esri’s mapping tools and open source code on GitHub to pull real-time data together, so firefighters can stay ahead of a blaze.

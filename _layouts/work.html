@@ -3,6 +3,8 @@ layout: default
 ---
 {% if page.tab == "Featured" %}
   {% assign films = site.films | where_exp: "f", "f.featured" | sort: "featured" %}
+{% elsif page.tab == "Case studies" %}
+  {% assign films = site.films | where_exp: "f", "f.tags contains page.tab" | sort: "case_order" %}
 {% elsif page.tab == "All" %}
   {% assign films = site.films | sort: "order" %}
 {% else %}

@@ -11,6 +11,7 @@ upload_date: 2026-10-27
 thumb: /assets/img/films/mercedes-hololens.jpg
 image: /assets/img/films/mercedes-hololens.jpg
 order: 5
+case_order: 5
 featured: 2
 description: "Microsoft customer case study: Mercedes-Benz uses HoloLens to help technicians solve complicated problems remotely. Directed, produced, written and edited by Alex Perrault."
 ---
