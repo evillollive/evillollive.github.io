@@ -14,7 +14,7 @@
   items:
     - name: Mapper Keeper
       line: A local-first battle map editor for tabletop role-playing games.
-      try: https://evilolive.com/Mapper-Keeper/
+      try: https://mapperkeeper.com/
       source: https://github.com/evillollive/Mapper-Keeper
     - name: Alarmed by Math
       line: An iPhone alarm you can only turn off by solving math problems.
