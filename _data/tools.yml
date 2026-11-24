@@ -12,10 +12,10 @@
       source: https://github.com/evillollive/casting-director
 - group: Side projects
   items:
-    - name: Dungeon Mapper
+    - name: Mapper Keeper
       line: A local-first battle map editor for tabletop role-playing games.
-      try: https://evillollive.github.io/Dungeon-Mapper/
-      source: https://github.com/evillollive/Dungeon-Mapper
+      try: https://evilolive.com/Mapper-Keeper/
+      source: https://github.com/evillollive/Mapper-Keeper
     - name: Alarmed by Math
       line: An iPhone alarm you can only turn off by solving math problems.
       source: https://github.com/evillollive/alarmed-by-math
